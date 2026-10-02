@@ -84,3 +84,18 @@ Run the test suite with:
 ```bash
 pytest
 ```
+
+## Goal
+
+The goal of this component is to provide a reliable and reusable way to generate **clear, concise, and professional resume summaries** for different candidates and job applications.
+
+
+Candidate Data
+     ↓
+Input Validation
+     ↓
+Resume Analysis
+     ↓
+Summary Generation
+     ↓
+Output Validation
