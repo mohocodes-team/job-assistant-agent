@@ -68,3 +68,34 @@ Skills
 Education
 Target role
 Add a realistic generated-summary example.
+
+## Installation
+
+```bash
+git clone <repository-url>
+cd resume-summary-generator
+pip install -r requirements.txt
+```
+
+## Testing
+
+Run the test suite with:
+
+```bash
+pytest
+```
+
+## Goal
+
+The goal of this component is to provide a reliable and reusable way to generate **clear, concise, and professional resume summaries** for different candidates and job applications.
+
+
+Candidate Data
+     ↓
+Input Validation
+     ↓
+Resume Analysis
+     ↓
+Summary Generation
+     ↓
+Output Validation
