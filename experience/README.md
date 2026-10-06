@@ -1,37 +1,99 @@
-## Experience
+# Resume Experience Generator
 
-### Professional Experience
+## Overview
+
+The Resume Experience Generator is a module responsible for transforming structured professional experience data into a professional resume experience section.
+
+It organizes job history, responsibilities, achievements, and technical contributions into a clear ATS-friendly format.
+
+The module helps generate consistent and impactful work experience descriptions while highlighting measurable results and relevant skills.
+
+## Experience Data Structure
+
+The generator processes structured professional experience information:
 
 - Job title
-- Company
+- Company name
 - Employment period
 - Location
+- Responsibilities
+- Technical achievements
+- Technologies used
 
-### Software Developer
+Example:
 
-**Company:** Example Company  
-**Period:** 2022 – 2026  
-**Location:** Remote
+```json
+{
+  "position": "Senior Full Stack Engineer",
+  "company": "Example Company",
+  "period": "2022 - Present",
+  "location": "Remote",
+  "responsibilities": [
+    "Developed scalable backend services",
+    "Built cloud-based applications"
+  ],
+  "technologies": [
+    "Java",
+    "React",
+    "AWS",
+    "Docker"
+  ]
+}
 
-#### Responsibilities
+## Generation Workflow
 
-- Developed and maintained software applications
-- Designed and implemented backend services
-- Collaborated with development teams
-- Investigated and resolved technical issues
+The experience generation process follows these steps:
 
-#### Key Achievements
+Experience Input Data
+|
+v
+Data Validation
+|
+v
+Achievement Analysis
+|
+v
+Resume Bullet Generation
+|
+v
+ATS Optimization
+|
+v
+Final Experience Section
 
-- Improved application performance and reliability
-- Automated repetitive development processes
-- Contributed to scalable software architecture
-- Reduced development and debugging time
 
-#### Technologies
+The workflow focuses on converting basic job information into achievement-oriented resume content.
 
-- Python
-- FastAPI
-- React
-- PostgreSQL
-- Docker
-- Git
+## Validation Rules
+
+Before generating experience content, the module validates:
+
+- Job title must be provided
+- Company information must exist
+- Employment dates must follow a valid format
+- Duplicate experience entries are removed
+- Empty responsibilities are rejected
+
+The validation process improves accuracy and prevents incomplete resume sections.
+
+## ATS Optimization
+
+The generator applies professional resume principles:
+
+- Uses action-oriented bullet points
+- Highlights measurable achievements
+- Preserves important technical keywords
+- Improves recruiter readability
+- Maintains compatibility with ATS systems
+
+---
+
+## Future Improvements
+
+Planned enhancements:
+
+- AI-powered achievement rewriting
+- Automatic impact measurement suggestions
+- Job-description-based experience optimization
+- Multi-language experience generation
+- Integration with resume scoring systems
