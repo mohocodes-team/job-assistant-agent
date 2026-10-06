@@ -1,46 +1,116 @@
-## Skills
+# Resume Skills Generator
 
-### Technical Skills
+## Overview
+
+The Resume Skills Generator is a module responsible for transforming structured technical and professional skills into a clear, organized, and ATS-friendly resume skills section.
+
+It helps organize skills by category, maintain consistent formatting, and highlight technologies and competencies that are relevant to a candidate's professional profile.
+
+The module is designed to produce concise skills sections that are easy for both applicant tracking systems and recruiters to understand.
+
+## Skills Data Structure
+
+The generator processes structured skill information organized by category.
+
+Supported categories may include:
 
 - Programming Languages
 - Frameworks & Libraries
+- Frontend Technologies
+- Backend Technologies
+- Cloud & Infrastructure
 - Databases
-- Development Tools
+- Messaging & Event Streaming
+- DevOps & CI/CD
+- Testing & Quality
+- Tools & Platforms
 
-### Programming Languages
+Example:
 
-- Python
-- Java
-- JavaScript
-- TypeScript
+```json
+{
+  "programming_languages": [
+    "Python",
+    "Go",
+    "Java",
+    "TypeScript"
+  ],
+  "backend": [
+    "FastAPI",
+    "Node.js",
+    "Spring Boot"
+  ],
+  "frontend": [
+    "React",
+    "Next.js",
+    "Redux"
+  ],
+  "cloud": [
+    "AWS",
+    "Docker",
+    "Kubernetes",
+    "Terraform"
+  ],
+  "databases": [
+    "PostgreSQL",
+    "MySQL",
+    "Redis"
+  ]
+}
 
-### Frameworks & Libraries
+## Generation Workflow
 
-- FastAPI
-- Django
-- React
-- Pydantic
-- SQLAlchemy
+The skills generation process follows these steps:
 
-### Databases
+```text
+Skills Input Data
+        |
+        v
+Skill Data Validation
+        |
+        v
+Skill Categorization
+        |
+        v
+Relevance Analysis
+        |
+        v
+ATS Keyword Optimization
+        |
+        v
+Final Skills Section
 
-- PostgreSQL
-- MySQL
-- Redis
+## Validation Rules
 
-### Development Tools
+Before generating the final skills section, the module validates:
 
-- Git
-- Docker
-- GitHub Actions
-- Pytest
+- Skill names must be provided
+- Empty skill categories are ignored
+- Duplicate skills are removed
+- Invalid or incomplete skill records are rejected
+- Skills are normalized for consistent naming
+- Related technologies can be grouped under the appropriate category
 
-### Skill Categories
+These validation rules help maintain a clean and consistent skills section.
 
-| Category | Skills |
-|---|---|
-| Backend | Python, FastAPI, Django |
-| Frontend | React, JavaScript, TypeScript |
-| Database | PostgreSQL, MySQL, Redis |
-| DevOps | Docker, GitHub Actions |
-| Testing | Pytest |
+## ATS Optimization
+
+The generator applies resume optimization principles:
+
+- Preserves important technical keywords
+- Groups related technologies logically
+- Avoids unnecessary repetition
+- Uses standard skill terminology
+- Improves recruiter readability
+- Maintains compatibility with ATS systems
+
+## Future Improvements
+
+Planned enhancements:
+
+- AI-powered skill extraction from resumes
+- Automatic skill extraction from job descriptions
+- Skill relevance ranking based on target positions
+- Detection of related and equivalent technologies
+- Multi-language skills generation
+- Integration with resume scoring systems
